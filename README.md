@@ -38,3 +38,14 @@ Hello World!
 $ pnpm env use -g 16.17.0
 $ echo 'use-node-version = 16.17.0' >> .npmrc
 ```
+
+### サンプルコードにテストを入れる → すでに入ってる
+
+```fish
+$ pnpm run test
+```
+
+```ts
+// コントローラーのメソッドを叩いてユニットテストしている
+expect(appController.getHello()).toBe('Hello World!');
+```
